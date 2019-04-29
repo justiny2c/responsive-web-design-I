@@ -4,19 +4,32 @@ body {
     margin-left: 50px;
     margin-right: 50px
 }
+
 nav a {
     color: gray;
     text-decoration: none;
+    margin-left: 20px;
   }
-  nav {
+
+nav a:first-child {
+    margin-left: 0px;
+}
+ 
+nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 50px;
     margin-bottom: 20px;
   }
+
+/* nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
   header {
       height: 35%;
       display: flex;
@@ -26,19 +39,10 @@ nav a {
 
   header h1 {
     font-size: 70px;
-    font-family: 'Oswald', sans-serif;
+    font-family: inherit;
     text-align: center;
   }
   
-  /*header button {
-    display: block;
-    width: 150px;
-    height: 40px;
-    font: inherit;
-    margin: 0 110px;
-    background: white;
-  }*/
-
   .Started {
     width: 150px;
     height: 40px;
@@ -50,7 +54,7 @@ nav a {
   }
   
   h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: inherit;
   }
     
   header div {
@@ -103,3 +107,9 @@ nav a {
   }
 
   
+  @media(max-width: 500px) {
+    body nav div{
+      display: flex;
+      flex-direction: column;
+    }
+}
