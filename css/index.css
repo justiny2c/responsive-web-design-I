@@ -5,30 +5,28 @@ body {
     margin-right: 50px
 }
 
-nav a {
-    color: gray;
-    text-decoration: none;
-    margin-left: 20px;
-  }
-
-nav a:first-child {
-    margin-left: 0px;
-}
  
 nav {
     display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-    width: 50%;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     margin-bottom: 20px;
   }
 
-/* nav {
+nav div {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: space-between;
-} */
+}
+
+nav div a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    padding-right: 50px;
+
+  }
 
   header {
       height: 35%;
@@ -67,7 +65,7 @@ nav {
   }
   
   header img {
-    width: 70%;
+    width: 80%;
   }
   
   .Features-about{
@@ -107,9 +105,76 @@ nav {
   }
 
   
-  @media(max-width: 500px) {
-    body nav div{
+@media(max-width: 500px) {
+nav {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      
     }
+nav div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    width: 100%
+}
+.Features-about {
+    display: flex;
+    flex-flow: column;
+    width: 100%
+}
+.SPV {
+    display: flex;
+    flex-flow: column;
+    width: 100%
+}
+.Features-about section  {
+    width: 100%;
+}
+.SPV section {
+    width: 100%;
+}
+header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+header div img {
+    display: none;
+}
+}
+
+@media(max-width: 800px) {
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+nav div {
+    padding-bottom: 30px;
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+header div img {
+    display: none;
+}
 }
