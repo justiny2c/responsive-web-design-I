@@ -1,3 +1,180 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+body {
+    margin-left: 50px;
+    margin-right: 50px
+}
 
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+nav div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+nav div a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    padding-right: 50px;
+
+  }
+
+  header {
+      height: 35%;
+      display: flex;
+      flex-flow: row;
+
+  }
+
+  header h1 {
+    font-size: 70px;
+    font-family: inherit;
+    text-align: center;
+  }
+  
+  .Started {
+    width: 150px;
+    height: 40px;
+    font: inherit;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: light-gray;
+  }
+  
+  h2 {
+    font-family: inherit;
+  }
+    
+  header div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    margin: 50px;
+  }
+  
+  header img {
+    width: 80%;
+  }
+  
+  .Features-about{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 1px solid black;
+  }
+  
+  .Features-about section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 49.5%;
+  }
+  
+  .SPV {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly
+  }
+  .SPV section{
+    width: 33%
+  }
+  
+  .Contact {
+    padding: 20px;
+    border-top: 1px solid black;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .middle-img {
+    width: 100%;
+  }
+
+  
+@media(max-width: 500px) {
+nav {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      
+    }
+nav div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    width: 100%
+}
+.Features-about {
+    display: flex;
+    flex-flow: column;
+    width: 100%
+}
+.SPV {
+    display: flex;
+    flex-flow: column;
+    width: 100%
+}
+.Features-about section  {
+    width: 100%;
+}
+.SPV section {
+    width: 100%;
+}
+header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+header div img {
+    display: none;
+}
+}
+
+@media(max-width: 800px) {
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+nav div {
+    padding-bottom: 30px;
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+header div img {
+    display: none;
+}
+}
